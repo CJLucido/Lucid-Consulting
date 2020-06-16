@@ -158,3 +158,159 @@ index.less (use less-watch-compiler public/less src index.less, and import less 
 	//no global or reset because using antd default
 
 
+_____________________________
+_functional component template_
+
+import React, {useEffect} from "react";
+
+import {connect} from "react-redux";
+
+//ACTION FUNCTIONS
+import{
+    somefunction,
+    someFailure
+} from "../../actions";
+
+//STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
+
+//PAGES
+import {Route, Link} from "react-router-dom";
+
+//THIS FUNCTIONAL COMPONENT
+
+function HomePage(props){
+    useEffect(() => {
+        props.somefunction()
+    }, []);
+
+    return(
+        <div>
+            <p>Some JSX</p>
+        </div>
+        
+    )
+};
+
+
+
+const mapDispatchToProps ={
+    somefunction,
+    someFailure
+}
+
+export default connect(state => state, mapDispatchToProps)(HomePage);
+
+
+
+_______________
+_action template_
+
+// import axios from "axios";
+// import axiosWithAuth from "../axios/axiosWithAuth";
+
+// //export as
+// export const SOME_ACTION = "SOME_ACTION";
+// export const SOME_FAILURE ="SOME-FAILURE";
+
+// //tie function entries to action's payload
+
+// export const somefunction = (optional_data) => ({type: SOME_ACTION, payload: optional_data})
+// export const functionFailure = (error) => ({type: SOME_FAILURE, payload: error})
+// //apply axiosWithAuth for dispatch
+
+// const authAxios = axiosWithAuth();
+
+// //dispatch
+
+// export const fetchArticles = () => dispatch => {
+
+//     authAxios
+//         .get('/articles')
+//         .then(res => {
+//             console.log("this is articles response.data", res)
+//             dispatch(somefunction(res.data))
+//         })
+//         .catch(err => {
+//             console.log("something went wrong with the test", err.message)
+//             dispatch(functionFailure(err.message))
+//         })
+// }
+
+________________
+_reducer template_
+
+// import {
+//     SOME_ACTION,
+//     SOME_FAILURE
+// } from "../actions";
+
+// const initialState = {
+//     articles: [],
+//     success: false,
+//     failure: false,
+//     error: null
+// }
+
+// export function reducer(state = initialState, action){
+//     switch(action.type){
+//         case SOME_ACTION:
+//             return{
+//                 ...state,
+//                 articles: action.payload,
+//                 success: true
+//             }
+//         case SOME_FAILURE:
+//             return{
+//                 ...state,
+//                 success: false,
+//                 failure:true,
+//                 error: action.payload
+//             }
+//         default:
+//             return state
+//     }
+// }
+
+
+________________________
+_axios with auth template_
+
+// import axios from 'axios';
+
+// export default () => {
+//     const token = localStorage.getItem('token');
+
+//     return axios.create({
+//         baseURL: "http://TBD/api", //CHANGE WITH BACKEND
+//         headers: {
+//             'Authorization': token,
+//         }
+//     });
+// };
+
+
+
+________________________________________________________
+_src index.js wired to reducer store addition/replacement_
+
+import {BrowserRouter as Router} from "react-router-dom";
+
+// import {Provider} from "react-redux";
+// import {createStore, applyMiddleware} from "redux";
+// import thunk from "redux-thunk";
+
+// import {reducer} from "./reducers";
+
+// const store = createStore(reducer, applyMiddleware(thunk));
+
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <Router>
+//       <App />
+//       <DatePicker/>
+//     </Router>
+//   </Provider>,
+//   document.getElementById('root')
+// );
+
+
