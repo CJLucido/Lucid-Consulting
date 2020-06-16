@@ -72,6 +72,7 @@ npm i redux
 npm i react-redux
 npm i redux-thunk
 npm i dotenv (in case you want to add internal app that uses some api)
+npm i --save react-router-dom
 
 _custom themes in antd_													
 																
