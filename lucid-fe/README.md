@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `craco start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,12 +12,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+### `craco test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `craco build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -37,32 +37,113 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
 ### Making a Progressive Web App
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+### Frontend Steps
+### React + AntD + LESS
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+READ ME
 
-### Deployment
+npx create-react-app lucid-fe
+ls (a check)
+cd lucid-fe
+npm start (a check)
+ctrl+c
+code .
+App.js
+	 import {Button} from 'antd';
+	<Button type="primary">Button</Button>
+App.css
+	@import '~antd/dist/antd.css'; //can change to antd.dark.less or antd.compact.less to try out different offical themes
+npm start (test import and button on App.js)
+ctrl+c
+index.js
+	import {DatePicker} from 'antd';
+	place <DatePicker/> in same div as <App/>
+npm start (test datepicker)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+_installing npm packages_
 
-### `npm run build` fails to minify
+npm install axios --save
+npm i redux
+npm i react-redux
+npm i redux-thunk
+npm i dotenv (in case you want to add internal app that uses some api)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+_custom themes in antd_													
+																
+npm install less														
+npm install @craco/craco --save (high level api for interacting with webpack config)						
+npm i -S craco-less (or craco-antd plugin which includes less, according to craco-less page. Following antd docs on it here)	
+																
+add craco.config.js file
+
+const CracoLessPlugin = require('craco-less');
+
+module.exports = {
+    plugins: [
+        {
+            plugin: CracoLessPlugin,
+            options: {
+                lessLoaderOptions: {
+                    lessOptions: {
+                        modifyVars: { '@primary-color' : '#1DA57A'},
+                        javascriptEnabled: true,
+                    }
+                }
+            }
+        }
+    ]
+}
+																|
+change App.css to App.less													|
+change App.css to App.less in App.js												|
+																|
+----------------------------------------------------------------------------------------------------------------------------------
+________________
+_folder structure_
+
+src
+-axios
+-actions
+-components
+	Pages
+	Organisms
+	Molecules
+	Atoms
+-reducers
+
+public
+-imgs
+-less
+
+
+______
+_files_
+
+reducer index.js
+action index.js
+axiosWithAuth.js
+components component_name.js
+index.less (use less-watch-compiler public/less src index.less, and import less files into that file)
+	test.less
+		npm start to test->antd, react, and less styles all being applied without issue
+	mixins.less
+	navigation.less
+	pg-articles.less
+	pg-contact.less
+	pg-fieldwork.less
+	pg-grants.less
+	pg-home.less
+	pg-mission.less
+	pg-news.less
+	pg-team.less
+	pg-team-individual.less
+	pg-technology.less
+	variables.less
+	//no global or reset because using antd default
+
+
