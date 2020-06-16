@@ -111,6 +111,16 @@ src
 -actions
 -components
 	Pages
+		01-HomePage.js
+		02-MissionPage.js
+		03-TeamPage.js
+		04-TeamMember.js
+		05-FieldworkPage.js
+		06-TechPage.js
+		07-GrantsPage.js
+		08-ArticlesPage.js
+		09-NewsPage.js
+		10-GrantsPage.js
 	Organisms
 	Molecules
 	Atoms
