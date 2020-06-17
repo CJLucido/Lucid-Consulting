@@ -168,7 +168,7 @@ import {connect} from "react-redux";
 //ACTION FUNCTIONS
 import{
     somefunction,
-    someFailure
+    functionFailure
 } from "../../actions";
 
 //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
@@ -195,7 +195,7 @@ function HomePage(props){
 
 const mapDispatchToProps ={
     somefunction,
-    someFailure
+    functionFailure
 }
 
 export default connect(state => state, mapDispatchToProps)(HomePage);
@@ -205,88 +205,88 @@ export default connect(state => state, mapDispatchToProps)(HomePage);
 _______________
 _action template_
 
-// import axios from "axios";
-// import axiosWithAuth from "../axios/axiosWithAuth";
+ import axios from "axios";
+ import axiosWithAuth from "../axios/axiosWithAuth";
 
-// //export as
-// export const SOME_ACTION = "SOME_ACTION";
-// export const SOME_FAILURE ="SOME-FAILURE";
+ //export as
+export const SOME_ACTION = "SOME_ACTION";
+export const SOME_FAILURE ="SOME-FAILURE";
 
-// //tie function entries to action's payload
+//tie function entries to action's payload
 
-// export const somefunction = (optional_data) => ({type: SOME_ACTION, payload: optional_data})
-// export const functionFailure = (error) => ({type: SOME_FAILURE, payload: error})
-// //apply axiosWithAuth for dispatch
+ export const somefunction = (optional_data) => ({type: SOME_ACTION, payload: optional_data})
+ export const functionFailure = (error) => ({type: SOME_FAILURE, payload: error})
+ //apply axiosWithAuth for dispatch
 
-// const authAxios = axiosWithAuth();
+ const authAxios = axiosWithAuth();
 
-// //dispatch
+ //dispatch
 
-// export const fetchArticles = () => dispatch => {
+ export const fetchArticles = () => dispatch => {
 
-//     authAxios
-//         .get('/articles')
-//         .then(res => {
-//             console.log("this is articles response.data", res)
-//             dispatch(somefunction(res.data))
-//         })
-//         .catch(err => {
-//             console.log("something went wrong with the test", err.message)
-//             dispatch(functionFailure(err.message))
-//         })
-// }
+     authAxios
+         .get('/articles')
+         .then(res => {
+             console.log("this is articles response.data", res)
+             dispatch(somefunction(res.data))
+         })
+         .catch(err => {
+             console.log("something went wrong with the test", err.message)
+             dispatch(functionFailure(err.message))
+         })
+ }
 
 ________________
 _reducer template_
 
-// import {
-//     SOME_ACTION,
-//     SOME_FAILURE
-// } from "../actions";
+ import {
+     SOME_ACTION,
+     SOME_FAILURE
+ } from "../actions";
 
-// const initialState = {
-//     articles: [],
-//     success: false,
-//     failure: false,
-//     error: null
-// }
+ const initialState = {
+     articles: [],
+     success: false,
+     failure: false,
+     error: null
+ }
 
-// export function reducer(state = initialState, action){
-//     switch(action.type){
-//         case SOME_ACTION:
-//             return{
-//                 ...state,
-//                 articles: action.payload,
-//                 success: true
-//             }
-//         case SOME_FAILURE:
-//             return{
-//                 ...state,
-//                 success: false,
-//                 failure:true,
-//                 error: action.payload
-//             }
-//         default:
-//             return state
-//     }
-// }
+ export function reducer(state = initialState, action){
+     switch(action.type){
+         case SOME_ACTION:
+             return{
+                 ...state,
+                 articles: action.payload,
+                 success: true
+             }
+         case SOME_FAILURE:
+             return{
+                 ...state,
+                 success: false,
+                 failure:true,
+                 error: action.payload
+             }
+         default:
+             return state
+     }
+ }
 
 
 ________________________
 _axios with auth template_
 
-// import axios from 'axios';
+ import axios from 'axios';
 
-// export default () => {
-//     const token = localStorage.getItem('token');
+ export default () => {
+     const token = localStorage.getItem('token');
 
-//     return axios.create({
-//         baseURL: "http://TBD/api", //CHANGE WITH BACKEND
-//         headers: {
-//             'Authorization': token,
-//         }
-//     });
-// };
+     return axios.create({
+         baseURL: "http://TBD/api", //CHANGE WITH BACKEND
+         headers: {
+             'Authorization': token,
+         }
+     });
+ };
 
 
 
@@ -295,22 +295,34 @@ _src index.js wired to reducer store addition/replacement_
 
 import {BrowserRouter as Router} from "react-router-dom";
 
-// import {Provider} from "react-redux";
-// import {createStore, applyMiddleware} from "redux";
-// import thunk from "redux-thunk";
+ import {Provider} from "react-redux";
+ import {createStore, applyMiddleware} from "redux";
+ import thunk from "redux-thunk";
 
-// import {reducer} from "./reducers";
+ import {reducer} from "./reducers";
 
-// const store = createStore(reducer, applyMiddleware(thunk));
+ const store = createStore(reducer, applyMiddleware(thunk));
 
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <Router>
-//       <App />
-//       <DatePicker/>
-//     </Router>
-//   </Provider>,
-//   document.getElementById('root')
-// );
+ ReactDOM.render(
+   < Provider store={store}>
+     < Router>
+       < App />
+       < DatePicker/>
+     < /Router>
+   < /Provider>,
+   document.getElementById('root')
+ );
+
+______________________________________________
+_deploying to netlify_
+
+in deploy settings on netlify
+
+base directory is the top level folder containing the relevant package.json (lucid-fe)
+build command is npm run-script build
+publish directory is lucid-fe/build   
+	build is created when you deploy with netlify, that folder will have the wiring between the public folder (html) and src (React). If you point to public instead of build you will just display a blank html page with the React App tab header
+ 
+for more see https://www.freecodecomp.org/forum/t/deploying-from-github-to-netlify/401938/13
 
 

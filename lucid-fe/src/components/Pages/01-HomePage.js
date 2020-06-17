@@ -1,40 +1,67 @@
-// import React, {useEffect} from "react";
+import React, {useEffect} from "react";
 
-// import {connect} from "react-redux";
+import {connect} from "react-redux";
 
-// //ACTION FUNCTIONS
-// import{
-//     somefunction,
-//     someFailure
-// } from "../../actions";
+//ACTION FUNCTIONS
+import{
+    somefunction,
+    functionFailure
+} from "../../actions";
 
-// //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
+//STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
 
-// //PAGES
-// import {Route, Link} from "react-router-dom";
+//PAGES
+import {Route, Link} from "react-router-dom";
 
-// //THIS FUNCTIONAL COMPONENT
+//THIS FUNCTIONAL COMPONENT
 
-// function HomePage(props){
-//     useEffect(() => {
-//         props.somefunction()
-//     }, []);
+function HomePage(props){
+    // useEffect(() => {
+    //     props.somefunction()
+    // }, []);
 
-//     return(
-//         <div>
-//             <p>Some JSX</p>
-//         </div>
+    return(
+        <div>
+            <p>Some Home</p>
+            <section id="home">
+                <h1>Lucid Consulting</h1>
+                <div class="grid-home">
+                    <div class="box s1-a-title">
+                    <h2>S1-A</h2>
+                    </div>   
+                    <div class="box s1-b-links">
+                    <h2>S1-B</h2>
+                    </div>
+                    <div class="box s1-c-grants-link">
+                    <h2>S1-C</h2>
+                    </div>
+                    <div class="box s1-d-side-links">
+                    <h2>S1-D</h2>
+                    </div>
+                    <div class="s1-e-mobile-links">
+                        <a>Mission</a>
+                        <a>Team</a>
+                        <a>Articles</a>
+                        <a>News</a>
+                        <a>Contact Us</a>
+                        <a>Apps</a>
+                        <a>Maps</a>
+
+                    </div>
+                </div>
+                </section>
+        </div>
         
-//     )
-// };
+    )
+};
 
 
 
-// const mapDispatchToProps ={
-//     somefunction,
-//     someFailure
-// }
+const mapDispatchToProps ={
+    somefunction,
+    functionFailure
+}
 
-// export default connect(state => state, mapDispatchToProps)(HomePage);
+export default connect(state => state, mapDispatchToProps)(HomePage);
 
-// //for more see supportify
+//for more see supportify

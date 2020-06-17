@@ -1,19 +1,19 @@
 // import axios from "axios";
 // import axiosWithAuth from "../axios/axiosWithAuth";
 
-// //export as
-// export const SOME_ACTION = "SOME_ACTION";
-// export const SOME_FAILURE ="SOME-FAILURE";
+//export as
+export const SOME_ACTION = "SOME_ACTION";
+export const SOME_FAILURE ="SOME-FAILURE";
 
-// //tie function entries to action's payload
+//tie function entries to action's payload
 
-// export const somefunction = (optional_data) => ({type: SOME_ACTION, payload: optional_data})
-// export const functionFailure = (error) => ({type: SOME_FAILURE, payload: error})
-// //apply axiosWithAuth for dispatch
+export const somefunction = (optional_data) => ({type: SOME_ACTION, payload: optional_data})
+export const functionFailure = (error) => ({type: SOME_FAILURE, payload: error})
+//apply axiosWithAuth for dispatch
 
 // const authAxios = axiosWithAuth();
 
-// //dispatch
+//dispatch
 
 // export const fetchArticles = () => dispatch => {
 
