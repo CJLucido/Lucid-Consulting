@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {DatePicker} from 'antd';
 
-import {BrowserRouter as Router} from "react-router-dom";
+//import {BrowserRouter as Router} from "react-router-dom";
 
 // import {Provider} from "react-redux";
 // import {createStore, applyMiddleware} from "redux";
