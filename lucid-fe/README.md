@@ -313,4 +313,16 @@ import {BrowserRouter as Router} from "react-router-dom";
    document.getElementById('root')
  );
 
+______________________________________________
+_deploying to netlify_
+
+in deploy settings on netlify
+
+base directory is the top level folder containing the relevant package.json (lucid-fe)
+build command is npm run-script build
+publish directory is lucid-fe/build   
+	build is created when you deploy with netlify, that folder will have the wiring between the public folder (html) and src (React). If you point to public instead of build you will just display a blank html page with the React App tab header
+ 
+for more see https://www.freecodecomp.org/forum/t/deploying-from-github-to-netlify/401938/13
+
 
