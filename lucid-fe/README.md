@@ -168,7 +168,7 @@ import {connect} from "react-redux";
 //ACTION FUNCTIONS
 import{
     somefunction,
-    someFailure
+    functionFailure
 } from "../../actions";
 
 //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
@@ -195,7 +195,7 @@ function HomePage(props){
 
 const mapDispatchToProps ={
     somefunction,
-    someFailure
+    functionFailure
 }
 
 export default connect(state => state, mapDispatchToProps)(HomePage);

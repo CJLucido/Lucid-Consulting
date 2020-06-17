@@ -5,7 +5,7 @@ import React, {useEffect} from "react";
 // //ACTION FUNCTIONS
 // import{
 //     somefunction,
-//     someFailure
+//     functionFailure
 // } from "../../actions";
 
 // //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
@@ -32,7 +32,7 @@ import React, {useEffect} from "react";
 
 // const mapDispatchToProps ={
 //     somefunction,
-//     someFailure
+//     functionFailure
 // }
 
 // export default connect(state => state, mapDispatchToProps)(HomePage);

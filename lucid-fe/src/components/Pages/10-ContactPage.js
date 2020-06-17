@@ -1,38 +1,38 @@
-// import React, {useEffect} from "react";
+import React, {useEffect} from "react";
 
-// import {connect} from "react-redux";
+import {connect} from "react-redux";
 
-// //ACTION FUNCTIONS
-// import{
-//     somefunction,
-//     someFailure
-// } from "../../actions";
+//ACTION FUNCTIONS
+import{
+    somefunction,
+    functionFailure
+} from "../../actions";
 
-// //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
+//STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
 
-// //PAGES
-// import {Route, Link} from "react-router-dom";
+//PAGES
+import {Route, Link} from "react-router-dom";
 
-// //THIS FUNCTIONAL COMPONENT
+//THIS FUNCTIONAL COMPONENT
 
-// function ContactPage(props){
-//     useEffect(() => {
-//         props.somefunction()
-//     }, []);
+function ContactPage(props){
+    // useEffect(() => {
+    //     props.somefunction()
+    // }, []);
 
-//     return(
-//         <div>
-//             <p>Some JSX</p>
-//         </div>
+    return(
+        <div>
+            <p>Some Contact Info</p>
+        </div>
         
-//     )
-// };
+    )
+};
 
 
 
-// const mapDispatchToProps ={
-//     somefunction,
-//     someFailure
-// }
+const mapDispatchToProps ={
+    somefunction,
+    functionFailure
+}
 
-// export default connect(state => state, mapDispatchToProps)(ContactPage);
+export default connect(state => state, mapDispatchToProps)(ContactPage);
