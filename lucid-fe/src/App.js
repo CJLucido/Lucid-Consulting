@@ -42,6 +42,21 @@ function App() {
         </a>
         <p class="test">Carlo Lucido</p>
         <Button type="primary">Button</Button>
+
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/mission">Mission</Link>
+          </li>
+          <li>
+            <Link to="/team">Team</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
       </header>
       <Switch>
 
