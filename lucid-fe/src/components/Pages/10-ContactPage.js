@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-
+import React from "react";
+//, {useEffect} 
 import {Button} from 'antd';
 
 import {connect} from "react-redux";
@@ -13,7 +13,7 @@ import{
 //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
 
 //PAGES
-import {Route, Link} from "react-router-dom";
+//import {Route, Link} from "react-router-dom";
 
 //THIS FUNCTIONAL COMPONENT
 
