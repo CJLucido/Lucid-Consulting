@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import {Button} from 'antd';
+//import logo from './logo.svg';
+
 import './App.less';
 
 import {Route, Switch, Link} from "react-router-dom";

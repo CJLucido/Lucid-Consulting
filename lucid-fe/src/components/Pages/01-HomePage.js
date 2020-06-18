@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-
+import React from "react";
+//, {useEffect}
 import {connect} from "react-redux";
 
 //ACTION FUNCTIONS
@@ -11,7 +11,7 @@ import{
 //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
 
 //PAGES
-import {Route, Link} from "react-router-dom";
+//import {Route, Link} from "react-router-dom";
 
 //THIS FUNCTIONAL COMPONENT
 
@@ -22,23 +22,22 @@ function HomePage(props){
 
     return(
         <div>
-            <p>Some Home</p>
+
             <section id="home">
-                <h1>Lucid Consulting</h1>
                 <div class="grid-home">
-                    <div class="box s1-a-title">
+                    <div class="flex-box s1-a-title">
                     <h2>S1-A</h2>
                     </div>   
-                    <div class="box s1-b-links">
+                    <div class="grid-box s1-b-links">
                     <h2>S1-B</h2>
                     </div>
-                    <div class="box s1-c-grants-link">
+                    <div class="flex-box s1-c-grants-link">
                     <h2>S1-C</h2>
                     </div>
-                    <div class="box s1-d-side-links">
+                    <div class="flex-box s1-d-side-links">
                     <h2>S1-D</h2>
                     </div>
-                    <div class="s1-e-mobile-links">
+                    {/* <div class="s1-e-mobile-links">
                         <a>Mission</a>
                         <a>Team</a>
                         <a>Articles</a>
@@ -47,7 +46,7 @@ function HomePage(props){
                         <a>Apps</a>
                         <a>Maps</a>
 
-                    </div>
+                    </div> */}
                 </div>
                 </section>
         </div>

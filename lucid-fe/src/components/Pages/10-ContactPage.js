@@ -1,4 +1,6 @@
-import React, {useEffect} from "react";
+import React from "react";
+//, {useEffect} 
+import {Button} from 'antd';
 
 import {connect} from "react-redux";
 
@@ -11,7 +13,7 @@ import{
 //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
 
 //PAGES
-import {Route, Link} from "react-router-dom";
+//import {Route, Link} from "react-router-dom";
 
 //THIS FUNCTIONAL COMPONENT
 
@@ -22,30 +24,39 @@ function ContactPage(props){
 
     return(
         <div>
-            <p>Some Contact Info</p>
             <section id="contact">
             <div class="grid-contact">
-                <div class="box s9-a-header" >
+                <div class="flex-box s9-a-header" >
                     <h2>S9-A</h2>
                 </div>
-                <div class="box s9-b-footer">
-                    <h2>S9-B</h2>
-                <div class="s9-c-header-2"> 
-                    <h2>Contact Us</h2>
-                    <button>Pay</button>
-                </div>
-                            <p>Lucid Consulting, L.L.C.
-                    500 Westover Dr. Unit#14157,
-                    Sanford, NC 27330</p>
-                            <p>828.222.0895
-                    admin@consulting-lucid.com</p>
-                            <p>Jobs
-                    Volunteers
-                    NGOs</p>
-                            <p>Quotes
-                    Technologies
-                    Staffing</p>
+                <div class="grid-box s9-b-footer">
                     
+                <div class="flex-box s9-c-header-2"> 
+                    <h2>Contact Us S9-B</h2>
+                    <Button type="primary">Pay</Button>
+                </div>
+
+                    <div class="grid-box2">
+                            <div class="s9-d-info">
+                                <p>Lucid Consulting, L.L.C.</p>
+                                <p>500 Westover Dr. Unit#14157,</p>
+                                <p>Sanford, NC 27330</p>
+                                </div>
+                            <div class="s9-d-info">
+                                <p>828.222.0895</p>
+                                <p>admin@consulting-lucid.com</p>
+                            </div>
+                            <div class="s9-d-info">
+                                <p>Jobs</p>
+                                <p>Volunteers</p>
+                                <p>NGOs</p>
+                            </div>
+                            <div class="s9-d-info">
+                                <p>Quotes</p>
+                                <p>Technologies</p>
+                                <p>Staffing</p>
+                                </div>
+                    </div>
                 </div>
 
             </div>
