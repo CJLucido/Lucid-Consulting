@@ -22,7 +22,25 @@ function TeamPage(props){
 
     return(
         <div>
-            <p>Some Team</p>
+            <section id="team">
+                <div class="grid-team">
+                    <div class="grid-box s3-a-team-links">
+                    
+                        <div class="flex-box s3-c-team-link">
+                            <p>S1-A-Sub CEO</p>
+                        </div>
+                        <div class="flex-box s3-c-team-link">
+                            <p>S1-A-Sub CFO</p>
+                        </div>
+                        <div class="flex-box s3-c-team-link">
+                            <p>S1-A-Sub CTO</p>
+                        </div>
+                    </div>   
+                    <div class="flex-box s3-b-team-statement">
+                    <h2>S1-B</h2>
+                    </div>
+                </div>
+            </section>
         </div>
         
     )
