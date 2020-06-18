@@ -23,7 +23,8 @@ function HomePage(props){
     return(
         <div>
 
-            <section id="home">
+            <section id="home" >
+                <div class="main">
                 <div class="grid-home">
                     <div class="flex-box s1-a-title">
                     <h2>S1-A</h2>
@@ -47,6 +48,7 @@ function HomePage(props){
                         <a>Maps</a>
 
                     </div> */}
+                </div>
                 </div>
                 </section>
         </div>

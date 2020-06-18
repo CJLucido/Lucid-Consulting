@@ -1,7 +1,10 @@
 .test {
   color: #216278;
 }
-section#home .grid-home {
+section#home .main {
+  background-image: url("./imgs/lucid-wall-1.jpg");
+}
+.grid-home {
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   display: grid;
