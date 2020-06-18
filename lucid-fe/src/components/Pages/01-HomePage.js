@@ -11,7 +11,12 @@ import{
 //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
 
 //PAGES
-//import {Route, Link} from "react-router-dom";
+import {Route, Link} from "react-router-dom";
+
+//svgs
+import contact from '../../imgs/contact.svg';
+import articles from '../../imgs/articles.svg';
+import news from '../../imgs/news.svg';
 
 //THIS FUNCTIONAL COMPONENT
 
@@ -26,17 +31,29 @@ function HomePage(props){
             <section id="home" >
                 <div class="main">
                 <div class="grid-home">
-                    <div class="flex-box s1-a-title">
-                    <h2>S1-A</h2>
+                    <div class="s1-a-title">
+                    <h2>Lucid Consulting</h2>
+                    <h3>A Cultural Mitigation Solutions Company</h3>
                     </div>   
                     <div class="grid-box s1-b-links">
-                    <h2>S1-B</h2>
+        
+          
+            <h2 class="team-link"><Link to="/team">Meet The Team</Link></h2>
+          
+          
+            <h2 class="mission-link"><Link to="/mission">Mission</Link></h2>
+            <h2 class="work-link"><Link to="/mission">Software, GIS, Drones</Link></h2>
                     </div>
-                    <div class="flex-box s1-c-grants-link">
-                    <h2>S1-C</h2>
+                    <div class="s1-c-grants-link">
+                    <h2><a>Grants Awarded</a></h2>
                     </div>
-                    <div class="flex-box s1-d-side-links">
-                    <h2>S1-D</h2>
+                    <div class="grid-box s1-d-side-links">
+                    
+                    <a class="flex-box-home"><img src={articles} alt="outline of pencil" /></a>
+                    <a class="flex-box-home"><img src={news} alt="outline of bell"/></a>
+                     <Link to="/contact" class="flex-box-home"><img src={contact} alt="outline of phone"/></Link>
+                    
+
                     </div>
                     {/* <div class="s1-e-mobile-links">
                         <a>Mission</a>
