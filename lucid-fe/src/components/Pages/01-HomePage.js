@@ -45,12 +45,12 @@ function HomePage(props){
             <h2 class="work-link"><Link to="/mission">Software, GIS, Drones</Link></h2>
                     </div>
                     <div class="s1-c-grants-link">
-                    <h2><a href="">Grants Awarded</a></h2>
+                    <h2><Link to="/mission">Grants Awarded</Link></h2>
                     </div>
                     <div class="grid-box s1-d-side-links">
                     
-                    <a href="" class="flex-box-home"><img src={articles} alt="outline of pencil" /></a>
-                    <a href="" class="flex-box-home"><img src={news} alt="outline of bell"/></a>
+                    <Link to="/mission" class="flex-box-home"><img src={articles} alt="outline of pencil" /></Link>
+                    <Link to="/mission" class="flex-box-home"><img src={news} alt="outline of bell"/></Link>
                      <Link to="/contact" class="flex-box-home"><img src={contact} alt="outline of phone"/></Link>
                     
 
