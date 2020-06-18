@@ -56,6 +56,7 @@ function App() {
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+            
           </li>
         </ul>
       </header>

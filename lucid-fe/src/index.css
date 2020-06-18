@@ -1,7 +1,10 @@
 .test {
   color: #216278;
 }
-section#home .grid-home {
+section#home .main {
+  background-image: url("./imgs/lucid-wall-1.jpg");
+}
+.grid-home {
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   display: grid;
@@ -9,12 +12,11 @@ section#home .grid-home {
   grid-gap: 1em;
   min-height: 500px;
 }
-.flex-box {
+.flex-box-home {
   display: flex;
   justify-content: center;
-  background-color: #5f3656;
 }
-.flex-box h2 {
+.flex-box-home h2 {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -22,24 +24,54 @@ section#home .grid-home {
 .grid-home .grid-box {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #bb6aa9;
 }
 .s1-a-title {
   grid-column: auto / span 4;
   grid-row: 1 / span 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .s1-a-title h2 {
   color: #F9F1F1;
   font-size: 3em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+  grid-row: 2 / span 1;
+  margin: 0;
+  padding: 0;
+}
+.s1-a-title h3 {
+  grid-row: 3 / span 1;
+  color: #F9F1F1;
+  font-size: 1.4em;
+  font-family: 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-left: 10em;
 }
 .s1-b-links {
   grid-column: 2 / span 4;
   grid-row: 2 / span 1;
 }
+.s1-b-links a {
+  color: #5f3656;
+}
+.s1-b-links .team-link {
+  margin-left: none;
+}
+.s1-b-links .mission-link {
+  margin-right: 10em;
+  margin-top: 0.2em;
+}
+.s1-b-links .work-link {
+  margin-left: 8em;
+}
 .s1-c-grants-link {
   grid-column: 4 / span 2;
   grid-row: 3 / span 1;
+  margin-left: 6em;
+}
+.s1-c-grants-link a {
+  color: #5f3656;
 }
 .s1-d-side-links {
   grid-column: 7 / span 1;
@@ -58,12 +90,12 @@ section#mission .grid-mission {
   grid-gap: 1em;
   min-height: 50vw;
 }
-.flex-box {
+.flex-box-mission {
   display: flex;
   justify-content: center;
   background-color: #465f36;
 }
-.flex-box h2 {
+.flex-box-mission h2 {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -93,17 +125,17 @@ section#team .grid-team {
   grid-gap: 1em;
   min-height: 50vw;
 }
-.flex-box {
+.flex-box-team {
   display: flex;
   justify-content: center;
   background-color: #363a5f;
 }
-.flex-box h2 {
+.flex-box-team h2 {
   display: flex;
   justify-content: center;
   align-self: center;
 }
-.flex-box p {
+.flex-box-team p {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -266,12 +298,12 @@ section#contact .grid-contact {
   grid-gap: 1em;
   min-height: 50vw;
 }
-.flex-box {
+.flex-box-contact {
   display: flex;
   justify-content: center;
   background-color: #365f5d;
 }
-.flex-box h2 {
+.flex-box-contact h2 {
   display: flex;
   justify-content: center;
   align-self: center;

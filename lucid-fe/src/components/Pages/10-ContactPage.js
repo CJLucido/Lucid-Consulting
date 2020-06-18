@@ -26,12 +26,12 @@ function ContactPage(props){
         <div>
             <section id="contact">
             <div class="grid-contact">
-                <div class="flex-box s9-a-header" >
+                <div class="flex-box-contact s9-a-header" >
                     <h2>S9-A</h2>
                 </div>
                 <div class="grid-box s9-b-footer">
                     
-                <div class="flex-box s9-c-header-2"> 
+                <div class="flex-box-contact s9-c-header-2"> 
                     <h2>Contact Us S9-B</h2>
                     <Button type="primary">Pay</Button>
                 </div>

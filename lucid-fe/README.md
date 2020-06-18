@@ -391,3 +391,10 @@ grid-row: 1 / span 3 ;
 display:grid;
 grid-template-rows: 1fr 1fr 1fr
 }
+
+
+______________
+_svgs_
+
+Must be imported into the functional component before used in img src
+
