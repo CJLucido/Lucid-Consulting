@@ -11,7 +11,7 @@ import{
 //STYLE COMING FROM LESS CLASSES AND ANTD COMPONENTS
 
 //PAGES
-import {Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 //svgs
 import contact from '../../imgs/contact.svg';
@@ -45,12 +45,12 @@ function HomePage(props){
             <h2 class="work-link"><Link to="/mission">Software, GIS, Drones</Link></h2>
                     </div>
                     <div class="s1-c-grants-link">
-                    <h2><a>Grants Awarded</a></h2>
+                    <h2><a href="">Grants Awarded</a></h2>
                     </div>
                     <div class="grid-box s1-d-side-links">
                     
-                    <a class="flex-box-home"><img src={articles} alt="outline of pencil" /></a>
-                    <a class="flex-box-home"><img src={news} alt="outline of bell"/></a>
+                    <a href="" class="flex-box-home"><img src={articles} alt="outline of pencil" /></a>
+                    <a href="" class="flex-box-home"><img src={news} alt="outline of bell"/></a>
                      <Link to="/contact" class="flex-box-home"><img src={contact} alt="outline of phone"/></Link>
                     
 
