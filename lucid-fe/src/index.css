@@ -149,40 +149,27 @@ section#team .grid-team-individual {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 500px) {
-  .grid-team-individual {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .s3-a-title {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-  .s3-s1-a-team-member {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
-  }
-  .s3-b-team-member-description {
-    grid-column: 1 / span 1;
-    grid-row: 5 / span 2;
-  }
-  .s3-s1-c-team-interests {
-    grid-column: 1 / span 1;
-    grid-row: 7 / span 2;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-team-individual {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-  }
-}
 section#fieldwork .grid-fieldwork {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2.5fr;
   margin: 1em;
   grid-gap: 1em;
+}
+.fieldwork-box1 {
+  display: flex;
+  justify-content: start;
+  background-color: #36AE83;
+}
+.fieldwork-box2 {
+  display: flex;
+  justify-content: start;
+  background-color: #0CB906;
+}
+.fieldwork-box3 {
+  display: flex;
+  justify-content: start;
+  background-color: #E88015;
 }
 .s4-a-title {
   grid-column: 1 / span 3;
@@ -192,23 +179,6 @@ section#fieldwork .grid-fieldwork {
   grid-column: 1 / span 3;
   grid-row: 2 / span 1;
 }
-@media screen and (min-width: 500px) {
-  .grid-fieldwork {
-    display: none;
-  }
-  .s4-a-title {
-    display: none;
-  }
-  .s4-b-phases {
-    display: none;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-home {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-  }
-}
 section#technology .grid-technology {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -216,10 +186,20 @@ section#technology .grid-technology {
   margin: 1em;
   grid-gap: 1em;
 }
-.fieldwork-box (same as fieldwork-box previously) {
+.fieldwork-box1 {
   display: flex;
   justify-content: start;
   background-color: #36AE83;
+}
+.fieldwork-box2 {
+  display: flex;
+  justify-content: start;
+  background-color: #0CB906;
+}
+.fieldwork-box3 {
+  display: flex;
+  justify-content: start;
+  background-color: #E88015;
 }
 .s5-a-title {
   grid-column: 1 / span 3;
@@ -228,23 +208,6 @@ section#technology .grid-technology {
 .s5-b-tech-types {
   grid-column: 1 / span 3;
   grid-row: 2 / span 1;
-}
-@media screen and (min-width: 500px) {
-  .grid-technology {
-    display: none;
-  }
-  .s5-a-title {
-    display: none;
-  }
-  .s5-b-tech-types {
-    display: none;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-technology {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-  }
 }
 section#grants .grid-grants {
   display: grid;
@@ -260,23 +223,6 @@ section#grants .grid-grants {
 .s6-b-ribbon {
   grid-column: 5 / span 2;
   grid-row: 1 / span 4;
-}
-@media screen and (min-width: 500px) {
-  .grid-grants {
-    display: none;
-  }
-  .s6-a-articles {
-    display: none;
-  }
-  .s6-b-ribbon {
-    display: none;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-grants {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-  }
 }
 section#articles .grid-articles {
   display: grid;
@@ -297,30 +243,10 @@ section#articles .grid-articles {
   grid-column: 5 / span 2;
   grid-row: 1 / span 2;
 }
-@media screen and (min-width: 500px) {
-  .grid-articles {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .s7-a-articles {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 7;
-  }
-  .s7-b-title {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-articles {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-  }
-}
 section#news .grid-news {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   margin: 1em;
   grid-gap: 1em;
 }
@@ -331,26 +257,6 @@ section#news .grid-news {
 .s8-b-title {
   grid-column: 5 / span 2;
   grid-row: 1 / span 2;
-}
-@media screen and (min-width: 500px) {
-  .grid-news {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .s7-a-articles {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 7;
-  }
-  .s7-b-title {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-news {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-  }
 }
 section#contact .grid-contact {
   display: grid;
