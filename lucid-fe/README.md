@@ -326,3 +326,68 @@ publish directory is lucid-fe/build
 for more see https://www.freecodecomp.org/forum/t/deploying-from-github-to-netlify/401938/13
 
 
+___________________________________
+_getting CSS grid to work_
+
+ there is a dark purple box that uses flex display and a light purple box that uses grid display for easier placement of sub-styles on pages
+
+template
+
+section#name
+.grid-name{
+grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: auto auto auto;
+display: grid;
+ margin: 1em;
+ grid-gap: 1em;
+ min-height: 500px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center; 
+  background-color: rgb(95, 54, 86);
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-self: center
+    }
+
+}
+
+.grid-name .grid-box {
+display:grid;
+grid-template-rows: 1fr 1fr 1fr;
+background-color: rgb(187, 106, 169);
+}
+
+.s1-a-title{
+grid-column: auto / span 4;
+grid-row: 1 / span 1;
+
+h2{
+    color: #F9F1F1;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+}
+
+.s1-b{
+grid-column: 2 / span 4;
+grid-row: 2 / span 1;
+
+
+}
+.s1-c{
+grid-column: 4 / span 2;
+grid-row: 3 / span 1;
+}
+
+.s1-d{ 
+grid-column: 7 /span 1;
+grid-row: 1 / span 3 ;
+display:grid;
+grid-template-rows: 1fr 1fr 1fr
+}
