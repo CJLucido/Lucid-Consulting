@@ -22,7 +22,20 @@ function MissionPage(props){
 
     return(
         <div>
-            <p>Some Mission</p>
+            <section id="mission">
+                
+                <div class="grid-mission">
+                    <div class="flex-box s2-a-title">
+                    <h1>Your Future + Our Past <br/> Now.</h1>
+                    </div>   
+                    <div class="flex-box s2-b-images">
+                    <h2>S1-B</h2>
+                    </div>
+                    <div class="flex-box s2-c-mission-text">
+                    <h2>S1-C</h2>
+                    </div>
+                </div>
+            </section>
         </div>
         
     )
