@@ -3,7 +3,7 @@ import React from 'react';
 
 import './App.less';
 
-import {Route, Switch, Link} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 
 import HomePage from "./components/Pages/01-HomePage";
 import MissionPage from "./components/Pages/02-MissionPage";
@@ -15,6 +15,9 @@ import TeamPage from "./components/Pages/03-TeamPage";
 //import ArticlesPage from "./components/Pages/08-ArticlesPage";
 //import NewsPage from "./components/Pages/09-NewsPage";
 import ContactPage from "./components/Pages/10-ContactPage";
+
+//ATOMS
+//import Sider from "./components/Atoms/Sider";
 
 import {connect} from "react-redux";
 
@@ -44,21 +47,6 @@ function App() {
         <p class="test">Carlo Lucido</p>
         <Button type="primary">Button</Button> */}
 
-        <ul>
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/mission">Mission</Link>
-          </li>
-          <li>
-            <Link to="/team">Team</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-            
-          </li>
-        </ul>
       </header>
       <Switch>
 

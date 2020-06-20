@@ -13,6 +13,9 @@ import{
 //PAGES
 //import {Route, Link} from "react-router-dom";
 
+//ATOMS
+import Sider from "../Atoms/Sider";
+
 //svgs
 import drone from '../../imgs/drone.svg';
 import navigation from '../../imgs/navigation.svg';
@@ -32,6 +35,7 @@ function MissionPage(props){
                 <div class="grid-mission">
                     <div class="flex-box-mission s2-a-title">
                     <h1>Your <span style={{color: "#2A1CEC"}}>Future</span> <span style={{fontSize:"1.3em"}}>+</span> Our <span style={{color: "#0CB906"}}>Past</span> <br/> <span style={{color:"#E88015"}}>Now</span>.</h1>
+                    <Sider/>
                     </div>   
                     <div class="flex-box-mission2 s2-b-images">
                     <img src={drone} alt="top down image of drone"/>

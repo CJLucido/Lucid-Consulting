@@ -186,6 +186,10 @@ section#team .grid-team {
   grid-column: auto / span 1;
   grid-row: auto / span 1;
 }
+.s3-d-team-nav {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
 section#team .grid-team-individual {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

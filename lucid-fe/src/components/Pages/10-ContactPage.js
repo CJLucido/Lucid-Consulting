@@ -15,6 +15,9 @@ import{
 //PAGES
 //import {Route, Link} from "react-router-dom";
 
+//ATOMS
+import Sider from "../Atoms/Sider";
+
 //svgs
 import states from "../../imgs/states.svg"
 
@@ -33,6 +36,7 @@ function ContactPage(props){
                 <div class="flex-box-contact s9-a-header" >
                     <h2>Near Us?</h2>
                     <h3>Let's meet in person.</h3>
+                    <Sider/>
                     <img src={states} alt="exploded view of state icons coming from a world icon. Florida, Arkansas, and North Carolina are shown" />
                 </div>
                 <div class="grid-box s9-b-footer">
