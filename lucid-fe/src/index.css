@@ -3,6 +3,8 @@
 }
 section#home .main {
   background-image: url("./imgs/lucid-wall-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .grid-home {
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -93,21 +95,28 @@ section#mission .grid-mission {
 .flex-box-mission {
   display: flex;
   justify-content: center;
-  background-color: #465f36;
+  align-items: center;
 }
 .flex-box-mission h2 {
   display: flex;
   justify-content: center;
   align-self: center;
 }
+.flex-box-mission2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .grid-mission .grid-box {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #bb6aa9;
 }
 .s2-a-title {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
+}
+.s2-a-title h1 {
+  font-size: 3em;
 }
 .s2-b-images {
   grid-column: 1 / span 1;
@@ -116,6 +125,25 @@ section#mission .grid-mission {
 .s2-c-mission-text {
   grid-column: 2 / span 3;
   grid-row: 1 / span 3;
+}
+.s2-c-mission-text p {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 2em;
+}
+.top {
+  color: #2A1CEC;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 2.5em;
+}
+.middle {
+  color: #0CB906;
+  margin-top: 1em;
+}
+.bottom {
+  color: #E88015;
+  margin-top: 1em;
 }
 section#team .grid-team {
   display: grid;
