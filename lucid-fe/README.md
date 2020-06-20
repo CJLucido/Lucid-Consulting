@@ -398,3 +398,8 @@ _svgs_
 
 Must be imported into the functional component before used in img src
 
+_______________
+_nav bar_
+
+Navbar is a reworked class component written by ant d
+positioning of it can be controlled on the homepage less file under the class name navBar
