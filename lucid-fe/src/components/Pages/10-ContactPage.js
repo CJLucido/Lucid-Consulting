@@ -15,6 +15,13 @@ import{
 //PAGES
 //import {Route, Link} from "react-router-dom";
 
+//ATOMS
+import Sider from "../Atoms/Sider";
+
+//svgs
+import states from "../../imgs/states.svg"
+
+
 //THIS FUNCTIONAL COMPONENT
 
 function ContactPage(props){
@@ -27,24 +34,27 @@ function ContactPage(props){
             <section id="contact">
             <div class="grid-contact">
                 <div class="flex-box-contact s9-a-header" >
-                    <h2>S9-A</h2>
+                    <h2>Near Us?</h2>
+                    <h3>Let's meet in person.</h3>
+                    <img src={states} alt="exploded view of state icons coming from a world icon. Florida, Arkansas, and North Carolina are shown" />
                 </div>
                 <div class="grid-box s9-b-footer">
                     
                 <div class="flex-box-contact s9-c-header-2"> 
-                    <h2>Contact Us S9-B</h2>
+                    <h1>Contact Us </h1>
                     <Button type="primary">Pay</Button>
                 </div>
 
                     <div class="grid-box2">
                             <div class="s9-d-info">
                                 <p>Lucid Consulting, L.L.C.</p>
-                                <p>500 Westover Dr. Unit#14157,</p>
+                                <p>500 Westover Dr.</p>
+                                <p>Unit#14157,</p>
                                 <p>Sanford, NC 27330</p>
                                 </div>
                             <div class="s9-d-info">
                                 <p>828.222.0895</p>
-                                <p>admin@consulting-lucid.com</p>
+                                <p style={{fontSize:"1.5em"}}>admin@consulting-lucid.com</p>
                             </div>
                             <div class="s9-d-info">
                                 <p>Jobs</p>
@@ -60,6 +70,9 @@ function ContactPage(props){
                 </div>
 
             </div>
+            <div class="navBar">
+                        <Sider/>
+                 </div>
             </section>  
         </div>
         

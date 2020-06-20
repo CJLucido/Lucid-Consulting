@@ -13,6 +13,9 @@ import{
 //PAGES
 //import {Route, Link} from "react-router-dom";
 
+//ATOMS
+import Sider from "../Atoms/Sider";
+
 //THIS FUNCTIONAL COMPONENT
 
 function TeamPage(props){
@@ -39,6 +42,9 @@ function TeamPage(props){
                     <div class="flex-box-team s3-b-team-statement">
                     <h2>S1-B</h2>
                     </div>
+                    <div class="navBar">
+                        <Sider/>
+                 </div>
                 </div>
             </section>
         </div>

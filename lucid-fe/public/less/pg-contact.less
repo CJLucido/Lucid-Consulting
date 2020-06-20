@@ -9,13 +9,22 @@ section#contact .grid-contact{
 
     .flex-box-contact {
         display: flex;
-        justify-content: center; 
-        background-color: rgb(54, 95, 93);
+        justify-content: space-evenly; 
+        //background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(54, 95, 93);
       
           h2 {
               display: flex;
-              justify-content: center;
-              align-self: center
+              justify-content: flex-start;
+              align-self: flex-start;
+              font-size: 5em;
+          }
+
+          h3 {
+            margin-top: 10em;
+          }
+
+          img {
+              max-height: 700px;
           }
       
       }
@@ -23,17 +32,17 @@ section#contact .grid-contact{
     .grid-contact .grid-box {
       display:grid;
       grid-template-rows: 1fr 1fr;
-      background-color: rgb(187, 106, 169);
+      //background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
       grid-gap: 1em;
       }
 
       .grid-contact .grid-box2 {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: rgb(187, 106, 169);
+        //background-color: rgb(187, 106, 169);
         grid-gap: 1em;
         padding:2em;
-        
+        padding-top:0;
         }
     
     .s9-a-header{
@@ -43,25 +52,40 @@ section#contact .grid-contact{
     .s9-b-footer{
     grid-column: 1/ span 4;
     grid-row: 3/ span 1;
-    
+    background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+
     }
     
     .s9-c-header-2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em
+    padding: 2em;
+    padding-bottom: 0;
+    //background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+
+
+    h1 {
+        font-size: 4em;
+        color:#F9F1F1;
+        //background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+
+    }
 }
 
     .s9-d-info{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        background-color: rgb(79, 163, 159);
+        justify-content: flex-start;
+        align-items: flex-end;
+        //background-color: rgb(79, 163, 159);
+        background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+
 
         p{
             margin-bottom: 0;
+            font-size: 2em;
+            color:#F9F1F1;
         }
     }
 
