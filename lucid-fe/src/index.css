@@ -12,7 +12,7 @@ section#home .main {
   display: grid;
   margin: 1em;
   grid-gap: 1em;
-  min-height: 500px;
+  min-height: 99vh;
 }
 .flex-box-home {
   display: flex;
@@ -83,6 +83,12 @@ section#home .main {
 }
 .s1-e-mobile-links {
   display: none;
+}
+.navBar {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 section#mission .grid-mission {
   display: grid;

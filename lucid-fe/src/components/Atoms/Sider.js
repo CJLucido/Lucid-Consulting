@@ -42,7 +42,7 @@ class NavBar extends React.Component {
           inlineCollapsed={this.state.collapsed}
         >
           <Menu.Item key="1" icon={<DesktopOutlined />}>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<PieChartOutlined />}>
           <Link to="/mission">Mission</Link>

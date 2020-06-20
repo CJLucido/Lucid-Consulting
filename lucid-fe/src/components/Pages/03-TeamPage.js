@@ -42,9 +42,9 @@ function TeamPage(props){
                     <div class="flex-box-team s3-b-team-statement">
                     <h2>S1-B</h2>
                     </div>
-                    <div class="s3-d-team-nav">
+                    <div class="navBar">
                         <Sider/>
-                    </div>
+                 </div>
                 </div>
             </section>
         </div>

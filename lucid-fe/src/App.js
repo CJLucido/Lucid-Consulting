@@ -50,7 +50,7 @@ function App() {
       </header>
       <Switch>
 
-          <Route path='/home'>
+          <Route exact path='/'>
             <HomePage/>
           </Route>
           <Route path='/mission'>

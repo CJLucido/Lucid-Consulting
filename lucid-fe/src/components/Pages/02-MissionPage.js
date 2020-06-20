@@ -35,7 +35,6 @@ function MissionPage(props){
                 <div class="grid-mission">
                     <div class="flex-box-mission s2-a-title">
                     <h1>Your <span style={{color: "#2A1CEC"}}>Future</span> <span style={{fontSize:"1.3em"}}>+</span> Our <span style={{color: "#0CB906"}}>Past</span> <br/> <span style={{color:"#E88015"}}>Now</span>.</h1>
-                    <Sider/>
                     </div>   
                     <div class="flex-box-mission2 s2-b-images">
                     <img src={drone} alt="top down image of drone"/>
@@ -50,6 +49,9 @@ function MissionPage(props){
                         <p class="bottom">Below you will find some services that we can provide for you, in the case that you don't find what you are looking for, then reach out! We are always interested in developing new solutions and exploring other technologies.</p>
                     </div>
                 </div>
+                <div class="navBar">
+                        <Sider/>
+                 </div>
             </section>
         </div>
         
