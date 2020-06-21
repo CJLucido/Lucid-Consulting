@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 //, {useEffect} 
 import {Button} from 'antd';
 
@@ -25,9 +25,9 @@ import states from "../../imgs/states.svg"
 //THIS FUNCTIONAL COMPONENT
 
 function ContactPage(props){
-    // useEffect(() => {
-    //     props.somefunction()
-    // }, []);
+    useEffect(() => {
+        document.getElementById("collapsable-menu").click()
+    }, []);
 
     return(
         <div>
