@@ -46,6 +46,8 @@ function ContactPage(props){
                 </div>
 
                     <div class="grid-box2">
+                    <div class="s9-d-info2"></div>
+                    <div class="s9-d-info2"></div>
                             <div class="s9-d-info">
                                 <p>Lucid Consulting, L.L.C.</p>
                                 <p>500 Westover Dr.</p>
@@ -56,7 +58,7 @@ function ContactPage(props){
                                 <p>828.222.0895</p>
                                 <p style={{fontSize:"1.5em"}}>admin@consulting-lucid.com</p>
                             </div>
-                            <div class="s9-d-info">
+                            {/* <div class="s9-d-info">
                                 <p>Jobs</p>
                                 <p>Volunteers</p>
                                 <p>NGOs</p>
@@ -65,7 +67,7 @@ function ContactPage(props){
                                 <p>Quotes</p>
                                 <p>Technologies</p>
                                 <p>Staffing</p>
-                                </div>
+                                </div> */}
                     </div>
                 </div>
 

@@ -1,11 +1,30 @@
 section#contact .grid-contact{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 1em;
-    grid-gap: 1em;
-    min-height: 50vw;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
+    // margin: 1em;
+    // grid-gap: 1em;
+    // min-height: 50vw;
+    @media screen and (min-width: 601px) {
+       
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 1em;
+        grid-gap: 1em;
+        min-height: 50vw;
     }
+
+    @media screen and (max-width: 600px) {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        margin: 1em;
+        grid-gap: 1em;
+        min-height: 0vw;
+    }
+    }
+
+
 
     .flex-box-contact {
         display: flex;
@@ -28,14 +47,25 @@ section#contact .grid-contact{
           }
       
       }
-      
+      @media screen and (min-width: 601px) {  
     .grid-contact .grid-box {
       display:grid;
       grid-template-rows: 1fr 1fr;
       //background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
       grid-gap: 1em;
       }
+    }
 
+    @media screen and (max-width: 600px) {  
+        .grid-contact .grid-box {
+          display:grid;
+          grid-template-rows: .2fr 1fr;
+          //background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+          grid-gap: 1em;
+          }
+        }
+
+      @media screen and (min-width: 601px) {
       .grid-contact .grid-box2 {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -44,18 +74,58 @@ section#contact .grid-contact{
         padding:2em;
         padding-top:0;
         }
+    }
+    @media screen and (max-width: 600px) {
+        .grid-contact .grid-box2 {
+          display:grid;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          //background-color: rgb(187, 106, 169);
+          grid-gap: 1em;
+          padding:2em;
+          padding-top:0;
+          }
+      }
+
+
+        @media screen and (min-width: 601px) {
     
     .s9-a-header{
     grid-column: 1/ span 4;
     grid-row: 1/ span 2
     }
+}
+
+@media screen and (max-width: 600px) {
+    .s9-a-header{
+        display:none;
+    }
+
+}
+
+
+@media screen and (min-width: 601px) {
+
     .s9-b-footer{
     grid-column: 1/ span 4;
     grid-row: 3/ span 1;
     background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
 
     }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .s9-b-footer{
+        grid-column: 1/ span 4;
+        grid-row: 1/ span 5;
+        background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+        border-radius: 25px;
+        }
+
+}
     
+@media screen and (min-width: 601px) {
     .s9-c-header-2{
     display: flex;
     justify-content: space-between;
@@ -73,6 +143,31 @@ section#contact .grid-contact{
     }
 }
 
+}
+
+@media screen and (max-width: 600px) {
+    .s9-c-header-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        padding-bottom: 0;
+        
+
+        h1 {
+            font-size: 4em;
+            color:#F9F1F1;
+            //background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+    
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 601px) {
     .s9-d-info{
         display: flex;
         flex-direction: column;
@@ -88,6 +183,39 @@ section#contact .grid-contact{
             color:#F9F1F1;
         }
     }
+
+}
+
+@media screen and (max-width: 600px) {
+    .s9-d-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        //background-color: rgb(79, 163, 159);
+        background-color: #ED963E;//rgba(232, 128, 21, 0.580392);//rgb(187, 106, 169);
+        margin-top: 2em;
+
+        p{
+            margin-bottom: 0;
+         
+            font-size: 2em;
+            color:#F9F1F1;
+        }
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .s9-d-info2{
+        display:flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .s9-d-info2{
+        display:none;
+    }
+}
 
     // @media screen and (min-width: 500px) {
     //     .grid-contact{

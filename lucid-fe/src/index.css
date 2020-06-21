@@ -550,11 +550,25 @@ section#news .grid-news {
 }
 section#contact .grid-contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 1em;
-  grid-gap: 1em;
-  min-height: 50vw;
+}
+@media screen and (min-width: 601px) {
+  section#contact .grid-contact {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 1em;
+    grid-gap: 1em;
+    min-height: 50vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  section#contact .grid-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 1em;
+    grid-gap: 1em;
+    min-height: 0vw;
+  }
 }
 .flex-box-contact {
   display: flex;
@@ -572,47 +586,127 @@ section#contact .grid-contact {
 .flex-box-contact img {
   max-height: 700px;
 }
-.grid-contact .grid-box {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1em;
+@media screen and (min-width: 601px) {
+  .grid-contact .grid-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+  }
 }
-.grid-contact .grid-box2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
-  padding: 2em;
-  padding-top: 0;
+@media screen and (max-width: 600px) {
+  .grid-contact .grid-box {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    grid-gap: 1em;
+  }
 }
-.s9-a-header {
-  grid-column: 1 / span 4;
-  grid-row: 1 / span 2;
+@media screen and (min-width: 601px) {
+  .grid-contact .grid-box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 2em;
+    padding-top: 0;
+  }
 }
-.s9-b-footer {
-  grid-column: 1 / span 4;
-  grid-row: 3 / span 1;
-  background-color: #ED963E;
+@media screen and (max-width: 600px) {
+  .grid-contact .grid-box2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 2em;
+    padding-top: 0;
+  }
 }
-.s9-c-header-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em;
-  padding-bottom: 0;
+@media screen and (min-width: 601px) {
+  .s9-a-header {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+  }
 }
-.s9-c-header-2 h1 {
-  font-size: 4em;
-  color: #F9F1F1;
+@media screen and (max-width: 600px) {
+  .s9-a-header {
+    display: none;
+  }
 }
-.s9-d-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
-  background-color: #ED963E;
+@media screen and (min-width: 601px) {
+  .s9-b-footer {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    background-color: #ED963E;
+  }
 }
-.s9-d-info p {
-  margin-bottom: 0;
-  font-size: 2em;
-  color: #F9F1F1;
+@media screen and (max-width: 600px) {
+  .s9-b-footer {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 5;
+    background-color: #ED963E;
+    border-radius: 25px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .s9-c-header-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    padding-bottom: 0;
+  }
+  .s9-c-header-2 h1 {
+    font-size: 4em;
+    color: #F9F1F1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s9-c-header-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    padding-bottom: 0;
+  }
+  .s9-c-header-2 h1 {
+    font-size: 4em;
+    color: #F9F1F1;
+  }
+}
+@media screen and (min-width: 601px) {
+  .s9-d-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #ED963E;
+  }
+  .s9-d-info p {
+    margin-bottom: 0;
+    font-size: 2em;
+    color: #F9F1F1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s9-d-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #ED963E;
+    margin-top: 2em;
+  }
+  .s9-d-info p {
+    margin-bottom: 0;
+    font-size: 2em;
+    color: #F9F1F1;
+  }
+}
+@media screen and (min-width: 601px) {
+  .s9-d-info2 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s9-d-info2 {
+    display: none;
+  }
 }
