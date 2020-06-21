@@ -31,7 +31,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <div style={{ width: 256 }}>
-        <Button type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
+        <Button id="collapsable-menu" type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
           {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
         </Button>
         <Menu
@@ -41,16 +41,16 @@ class NavBar extends React.Component {
           theme="dark"
           inlineCollapsed={this.state.collapsed}
         >
-          <Menu.Item key="1" icon={<DesktopOutlined />}>
+          <Menu.Item key="1" id="home-key" icon={<DesktopOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<PieChartOutlined />}>
+          <Menu.Item key="2" id="mission-key" icon={<PieChartOutlined />}>
           <Link to="/mission">Mission</Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<AppstoreOutlined />}>
+          <Menu.Item key="3" id="team-key" icon={<AppstoreOutlined />}>
           <Link to="/team">Team</Link>
           </Menu.Item>
-          <Menu.Item key="4" icon={<MailOutlined />}>
+          <Menu.Item key="4" id="contact-key" icon={<MailOutlined />}>
           <Link to="/contact">Contact</Link>
           </Menu.Item>
           {/* <SubMenu key="sub1" icon={<MailOutlined />} title="Navigation One">

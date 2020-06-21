@@ -17,7 +17,7 @@ import TeamPage from "./components/Pages/03-TeamPage";
 import ContactPage from "./components/Pages/10-ContactPage";
 
 //ATOMS
-//import Sider from "./components/Atoms/Sider";
+import Sider from "./components/Atoms/Sider";
 
 import {connect} from "react-redux";
 
@@ -65,6 +65,9 @@ function App() {
 
 
       </Switch>
+      <div class="navBar">
+                        <Sider/>
+                 </div>
     </div>
   );
 }

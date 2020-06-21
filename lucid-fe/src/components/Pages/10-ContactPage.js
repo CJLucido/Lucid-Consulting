@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 //, {useEffect} 
-import {Button} from 'antd';
+//import {Button} from 'antd';
 
 import {connect} from "react-redux";
 
@@ -16,7 +16,7 @@ import{
 //import {Route, Link} from "react-router-dom";
 
 //ATOMS
-import Sider from "../Atoms/Sider";
+//import Sider from "../Atoms/Sider";
 
 //svgs
 import states from "../../imgs/states.svg"
@@ -25,9 +25,9 @@ import states from "../../imgs/states.svg"
 //THIS FUNCTIONAL COMPONENT
 
 function ContactPage(props){
-    // useEffect(() => {
-    //     props.somefunction()
-    // }, []);
+    useEffect(() => {
+        document.getElementById("collapsable-menu").click()
+    }, []);
 
     return(
         <div>
@@ -42,10 +42,12 @@ function ContactPage(props){
                     
                 <div class="flex-box-contact s9-c-header-2"> 
                     <h1>Contact Us </h1>
-                    <Button type="primary">Pay</Button>
+                    {/* <Button type="primary">Pay</Button> */}
                 </div>
 
                     <div class="grid-box2">
+                    <div class="s9-d-info2"></div>
+                    <div class="s9-d-info2"></div>
                             <div class="s9-d-info">
                                 <p>Lucid Consulting, L.L.C.</p>
                                 <p>500 Westover Dr.</p>
@@ -54,9 +56,9 @@ function ContactPage(props){
                                 </div>
                             <div class="s9-d-info">
                                 <p>828.222.0895</p>
-                                <p style={{fontSize:"1.5em"}}>admin@consulting-lucid.com</p>
+                                <p >admin@consulting-lucid.com</p>
                             </div>
-                            <div class="s9-d-info">
+                            {/* <div class="s9-d-info">
                                 <p>Jobs</p>
                                 <p>Volunteers</p>
                                 <p>NGOs</p>
@@ -65,14 +67,12 @@ function ContactPage(props){
                                 <p>Quotes</p>
                                 <p>Technologies</p>
                                 <p>Staffing</p>
-                                </div>
+                                </div> */}
                     </div>
                 </div>
 
             </div>
-            <div class="navBar">
-                        <Sider/>
-                 </div>
+
             </section>  
         </div>
         

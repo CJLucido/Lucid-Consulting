@@ -14,7 +14,7 @@ import{
 //import {Route, Link} from "react-router-dom";
 
 //ATOMS
-import Sider from "../Atoms/Sider";
+//import Sider from "../Atoms/Sider";
 
 //svgs
 import drone from '../../imgs/drone.svg';
@@ -49,9 +49,7 @@ function MissionPage(props){
                         <p class="bottom">Below you will find some services that we can provide for you, in the case that you don't find what you are looking for, then reach out! We are always interested in developing new solutions and exploring other technologies.</p>
                     </div>
                 </div>
-                <div class="navBar">
-                        <Sider/>
-                 </div>
+
             </section>
         </div>
         
