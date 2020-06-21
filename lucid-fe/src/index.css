@@ -162,7 +162,9 @@ section#team .grid-team {
 .flex-box-team {
   display: flex;
   justify-content: center;
-  background-color: #363a5f;
+  background-color: #36AE83;
+  border-radius: 25px;
+  max-width: 80%;
 }
 .flex-box-team h2 {
   display: flex;
@@ -177,20 +179,53 @@ section#team .grid-team {
 .grid-team .grid-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #bb6aa9;
   grid-gap: 1em;
 }
 .s3-a-team-links {
   grid-column: 1 / span 3;
   grid-row: auto / span 1;
 }
+.s3-a-team-links .ceo {
+  background-image: url("./imgs/CarloCEO.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s3-a-team-links .coo {
+  background-image: url("./imgs/CaraCOO.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s3-a-team-links .cfo {
+  background-image: url("./imgs/AlexCFO.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .s3-b-team-statement {
   grid-column: 2 / span 2;
   grid-row: 2 / span 1;
+  max-height: 50%;
+}
+.s3-b-team-statement h1 {
+  font-size: 3.5em;
+  padding: 0.2em;
 }
 .s3-c-team-link {
   grid-column: auto / span 1;
   grid-row: auto / span 1;
+  color: #F9F1F1;
+  font-size: 2em;
+}
+.s3-c-team-link p {
+  text-shadow: 2px 2px black;
+}
+.orange:hover {
+  background: #E88015;
+}
+.blue:hover {
+  background: #3836ae;
+}
+.green:hover {
+  background: #36ae64;
 }
 .s3-d-team-nav {
   grid-column: 1 / span 2;

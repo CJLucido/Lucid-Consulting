@@ -16,6 +16,11 @@ import{
 //ATOMS
 import Sider from "../Atoms/Sider";
 
+//pictures
+// import Cara from "../../imgs/CaraCOO.JPG";
+// import Carlo from "../../imgs/CarloCEO.JPG";
+// import Alex from "../../imgs/AlexCFO.JPG";
+
 //THIS FUNCTIONAL COMPONENT
 
 function TeamPage(props){
@@ -29,18 +34,21 @@ function TeamPage(props){
                 <div class="grid-team">
                     <div class="grid-box s3-a-team-links">
                     
-                        <div class="flex-box-team s3-c-team-link">
-                            <p>S1-A-Sub CEO</p>
+                        <div class="flex-box-team ceo s3-c-team-link orange">
+                            {/* <img src={Carlo}/> */}
+                            <p>Carlo Lucido CEO</p>
                         </div>
-                        <div class="flex-box-team s3-c-team-link">
-                            <p>S1-A-Sub CFO</p>
+                        <div class="flex-box-team cfo s3-c-team-link blue">
+                            {/* <img src={Alex}/> */}
+                            <p>Alexander Rivas CFO</p>
                         </div>
-                        <div class="flex-box-team s3-c-team-link">
-                            <p>S1-A-Sub CTO</p>
+                        <div class="flex-box-team coo s3-c-team-link green">
+                            {/* <img src={Cara}/> */}
+                            <p>Cara Kubiak COO</p>
                         </div>
                     </div>   
                     <div class="flex-box-team s3-b-team-statement">
-                    <h2>S1-B</h2>
+                    <h1>We look forward to solving your problem!</h1>
                     </div>
                     <div class="navBar">
                         <Sider/>
