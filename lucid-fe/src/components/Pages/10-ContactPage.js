@@ -16,7 +16,7 @@ import{
 //import {Route, Link} from "react-router-dom";
 
 //ATOMS
-import Sider from "../Atoms/Sider";
+//import Sider from "../Atoms/Sider";
 
 //svgs
 import states from "../../imgs/states.svg"
@@ -70,9 +70,7 @@ function ContactPage(props){
                 </div>
 
             </div>
-            <div class="navBar">
-                        <Sider/>
-                 </div>
+
             </section>  
         </div>
         

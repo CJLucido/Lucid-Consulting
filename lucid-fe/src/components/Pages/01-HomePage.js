@@ -14,7 +14,7 @@ import{
 import {Link} from "react-router-dom";
 
 //ATOMS
-import Sider from "../Atoms/Sider";
+//import Sider from "../Atoms/Sider";
 
 //svgs
 import contact from '../../imgs/contact.svg';
@@ -70,9 +70,7 @@ function HomePage(props){
                     </div> */}
                 </div>
                 </div>
-                <div class="navBar">
-                        <Sider/>
-                 </div>
+
                 </section>
         </div>
         

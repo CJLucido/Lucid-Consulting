@@ -14,7 +14,7 @@ import{
 //import {Route, Link} from "react-router-dom";
 
 //ATOMS
-import Sider from "../Atoms/Sider";
+//import Sider from "../Atoms/Sider";
 
 //pictures
 // import Cara from "../../imgs/CaraCOO.JPG";
@@ -50,9 +50,7 @@ function TeamPage(props){
                     <div class="flex-box-team2 s3-b-team-statement">
                     <h1>We look forward to solving your problem!</h1>
                     </div>
-                    <div class="navBar">
-                        <Sider/>
-                 </div>
+
                 </div>
             </section>
         </div>
