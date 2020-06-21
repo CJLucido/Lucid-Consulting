@@ -56,7 +56,7 @@ function ContactPage(props){
                                 </div>
                             <div class="s9-d-info">
                                 <p>828.222.0895</p>
-                                <p style={{fontSize:"1.5em"}}>admin@consulting-lucid.com</p>
+                                <p >admin@consulting-lucid.com</p>
                             </div>
                             {/* <div class="s9-d-info">
                                 <p>Jobs</p>
