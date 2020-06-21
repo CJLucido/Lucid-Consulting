@@ -267,61 +267,132 @@ section#mission .grid-mission {
 }
 section#team .grid-team {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  margin: 1em;
-  grid-gap: 1em;
-  min-height: 50vw;
 }
-.flex-box-team {
-  display: flex;
-  justify-content: center;
-  background-color: #36AE83;
-  border-radius: 25px;
-  max-width: 80%;
+@media (min-width: 601px) {
+  .grid-team {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 1em;
+    grid-gap: 1em;
+    min-height: 50vw;
+  }
 }
-.flex-box-team h2 {
-  display: flex;
-  justify-content: center;
-  align-self: center;
+@media (max-width: 600px) {
+  .grid-team {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 1em;
+    grid-gap: 1em;
+    min-height: 100vh;
+  }
 }
-.flex-box-team p {
-  display: flex;
-  justify-content: center;
-  align-self: center;
+@media (min-width: 601px) {
+  .flex-box-team {
+    display: flex;
+    justify-content: center;
+    background-color: #36AE83;
+    border-radius: 25px;
+    max-width: 80%;
+  }
+  .flex-box-team h2 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .flex-box-team p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
-.grid-team .grid-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
+@media (max-width: 601px) {
+  .flex-box-team {
+    justify-content: flex-end;
+    border-radius: 25px;
+    max-width: 100%;
+  }
 }
-.s3-a-team-links {
-  grid-column: 1 / span 3;
-  grid-row: auto / span 1;
+@media (min-width: 601px) {
+  .flex-box-team2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36AE83;
+    border-radius: 25px;
+    max-width: 80%;
+  }
 }
-.s3-a-team-links .ceo {
-  background-image: url("./imgs/CarloCEO.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (min-width: 601px) {
+  .grid-team .grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
 }
-.s3-a-team-links .coo {
-  background-image: url("./imgs/CaraCOO.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (max-width: 600px) {
+  .grid-team .grid-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.4em;
+  }
 }
-.s3-a-team-links .cfo {
-  background-image: url("./imgs/AlexCFO.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (min-width: 601px) {
+  .s3-a-team-links {
+    grid-column: 1 / span 3;
+    grid-row: auto / span 1;
+  }
+  .s3-a-team-links .ceo {
+    background-image: url("./imgs/CarloCEO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s3-a-team-links .coo {
+    background-image: url("./imgs/CaraCOO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s3-a-team-links .cfo {
+    background-image: url("./imgs/AlexCFO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-.s3-b-team-statement {
-  grid-column: 2 / span 2;
-  grid-row: 2 / span 1;
-  max-height: 50%;
+@media (max-width: 600px) {
+  .s3-a-team-links {
+    grid-column: 1 / span 1;
+    grid-row: auto / span 3;
+  }
+  .s3-a-team-links .ceo {
+    background-image: url("./imgs/CarloCEO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s3-a-team-links .coo {
+    background-image: url("./imgs/CaraCOO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s3-a-team-links .cfo {
+    background-image: url("./imgs/AlexCFO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-.s3-b-team-statement h1 {
-  font-size: 3.5em;
-  padding: 0.2em;
+@media screen and (min-width: 601px) {
+  .s3-b-team-statement {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    max-height: 50%;
+  }
+  .s3-b-team-statement h1 {
+    font-size: 1.5vw;
+    padding: 0.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s3-b-team-statement h1 {
+    display: none;
+  }
 }
 .s3-c-team-link {
   grid-column: auto / span 1;
