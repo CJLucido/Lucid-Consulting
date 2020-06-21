@@ -166,14 +166,14 @@ section#home .main {
 section#mission .grid-mission {
   display: grid;
 }
-@media (min-width: 500px) {
+@media (min-width: 601px) {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.66fr 1fr 1fr;
   margin: 1em;
   grid-gap: 1em;
   min-height: 50vh;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .grid-mission {
     display: grid;
     grid-template-columns: 1fr;
@@ -202,7 +202,7 @@ section#mission .grid-mission {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   .s2-a-title {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -211,25 +211,25 @@ section#mission .grid-mission {
     font-size: 3em;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .s2-a-title {
     grid-row: 1 / span 0.1;
     padding: 0;
     margin: 0;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   .s2-b-images {
     grid-column: 1 / span 1;
     grid-row: 2 / span 2;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .s2-b-images {
     display: none;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   .s2-c-mission-text {
     grid-column: 2 / span 3;
     grid-row: 1 / span 3;
@@ -240,7 +240,7 @@ section#mission .grid-mission {
     font-size: 2em;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .s2-c-mission-text {
     grid-column: 1 / span 1;
     grid-row: 2 / span 3;
