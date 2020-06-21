@@ -1,6 +1,5 @@
 //This page should actually use flexbox for the overall layout if you want to team members to wrap up to S1-B as they are added. However, if it will only be 4 people shown then a sub section that just takes up that 1st column second row can be made for that forth person.
 
-
 section#team .grid-team{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -13,7 +12,10 @@ section#team .grid-team{
     .flex-box-team {
         display: flex;
         justify-content: center; 
-        background-color: rgb(54, 58, 95);
+        background-color: #36AE83;
+        border-radius: 25px;
+        max-width: 80%;
+      
       
           h2 {
               display: flex;
@@ -32,24 +34,72 @@ section#team .grid-team{
     .grid-team .grid-box {
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
-      background-color: rgb(187, 106, 169);
+      //background-color: rgb(187, 106, 169);
       grid-gap: 1em;
       }
     
     .s3-a-team-links{
     grid-column: 1 / span 3;
     grid-row: auto / span 1; //(is this going to work to carry the overflow?)
-    }
+    
+      .ceo {
+        background-image: url("@{images}/CarloCEO.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .coo {
+        background-image: url("@{images}/CaraCOO.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .cfo {
+        background-image: url("@{images}/AlexCFO.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  }
     
     .s3-b-team-statement{
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
+    max-height: 50%;
+    
+
+      h1{
+        font-size: 3.5em;
+        padding: .2em;
+      }
     }
     
     .s3-c-team-link{
         grid-column: auto / span 1;
         grid-row: auto / span 1;
+
+        color: #F9F1F1;
+        font-size: 2em;
+        
+        p {
+          text-shadow: 2px 2px black;
+        }
     }
+
+   
+
+      .orange:hover{
+        background: #E88015;
+      }
+      .blue:hover{
+        background: #3836ae//#2A1CEC;
+      }
+      .green:hover{
+        background: #36ae64//#0CB906;
+      }
+ 
+
+
+
 
     .s3-d-team-nav {
       grid-column: 1 / span 2;
