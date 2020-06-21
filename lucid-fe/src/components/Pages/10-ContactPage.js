@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 //, {useEffect} 
-import {Button} from 'antd';
+//import {Button} from 'antd';
 
 import {connect} from "react-redux";
 
@@ -42,7 +42,7 @@ function ContactPage(props){
                     
                 <div class="flex-box-contact s9-c-header-2"> 
                     <h1>Contact Us </h1>
-                    <Button type="primary">Pay</Button>
+                    {/* <Button type="primary">Pay</Button> */}
                 </div>
 
                     <div class="grid-box2">
