@@ -280,10 +280,10 @@ section#team .grid-team {
 @media (max-width: 600px) {
   .grid-team {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 1em;
     grid-gap: 1em;
-    min-height: 100vh;
+    min-height: 140vh;
   }
 }
 @media (min-width: 601px) {
@@ -332,7 +332,7 @@ section#team .grid-team {
 @media (max-width: 600px) {
   .grid-team .grid-box {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 0.4em;
   }
 }
@@ -356,6 +356,11 @@ section#team .grid-team {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .s3-a-team-links .cto {
+    background-image: url("./imgs/MarcCTO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media (max-width: 600px) {
   .s3-a-team-links {
@@ -374,6 +379,11 @@ section#team .grid-team {
   }
   .s3-a-team-links .cfo {
     background-image: url("./imgs/AlexCFO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s3-a-team-links .cto {
+    background-image: url("./imgs/MarcCTO.JPG");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -709,5 +719,15 @@ section#contact .grid-contact {
 @media screen and (max-width: 600px) {
   .s9-d-info2 {
     display: none;
+  }
+}
+@media screen and (min-width: 601px) {
+  .s9-d-info3 {
+    padding-bottom: 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s9-d-info3 {
+    padding-bottom: auto;
   }
 }

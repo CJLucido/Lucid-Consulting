@@ -18,10 +18,10 @@ section#team .grid-team{
     @media (max-width: 600px) {
       .grid-team{
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
        margin: 1em;
        grid-gap: 1em;
-       min-height: 100vh;
+       min-height: 140vh;
       }
 
     }
@@ -96,7 +96,7 @@ section#team .grid-team{
     @media (max-width: 600px) {
       .grid-team .grid-box {
         display:grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         //background-color: rgb(187, 106, 169);
         grid-gap: .4em;
         }
@@ -122,6 +122,11 @@ section#team .grid-team{
 
       .cfo {
         background-image: url("@{images}/AlexCFO.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .cto {
+        background-image: url("@{images}/MarcCTO.JPG");
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -152,6 +157,11 @@ section#team .grid-team{
     background-size: cover;
   }
 
+  .cto {
+    background-image: url("@{images}/MarcCTO.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 }
 
