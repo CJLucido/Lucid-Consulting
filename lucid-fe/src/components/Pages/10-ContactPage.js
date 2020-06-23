@@ -52,7 +52,7 @@ function ContactPage(props){
                                 <p>Lucid Consulting, L.L.C.</p>
                                 <p>500 Westover Dr.</p>
                                 <p>Unit#14157,</p>
-                                <p>Sanford, NC 27330</p>
+                                <p class= "s9-d-info3">Sanford, NC 27330</p>
                                 </div>
                             <div class="s9-d-info">
                                 <p>828.222.0895</p>
