@@ -42,11 +42,11 @@ function MissionPage(props){
                     <img src={trowel} style={{paddingLeft:"15em", marginTop:"2em"}} alt="icon of a trowel, a tool used by archaeologists during excavation"/>
                     </div>
                     <div class="grid-box s2-c-mission-text">
-                        <p class="top">We've all heard the adage that those who ignore history are doomed to repeat it, Lucid Consulting helps end that pattern. Owned by technology driving anthropologists, we are intimate with applying historical information and broader cultural context to our problem solving approach.</p> 
+                        <p class="top">We've all heard the adage that those who ignore history are doomed to repeat it; Lucid Consulting helps end that pattern. Owned by technology-driving anthropologists, we specialize in applying historical information and broader cultural context to our problem-solving approach.</p> 
 
-                        <p class="middle">Alongside our GIS, web and app development, photogrammetry, 3D modeling, and drone expertise, we are also accustomed to field work in the United States and project management in Latin America, where we have assessed many archaeological sites for their cultural resources. Our assessments include all three phases of excavation, pedestrian survey, and monitoring. We're happy to help staff or manage staff.</p>
+                        <p class="middle">Alongside our GIS, web and app development, photogrammetry, 3D modeling, and drone expertise, we are also accustomed to fieldwork in the United States and project management in Latin America, where we have assessed many archaeological sites for their cultural resources. Our assessments include all three phases of excavation, pedestrian survey, and monitoring. We're happy to recruit or manage staff.</p>
 
-                        <p class="bottom">Below you will find some services that we can provide for you, in the case that you don't find what you are looking for, then reach out! We are always interested in developing new solutions and exploring other technologies.</p>
+                        <p class="bottom">Below, you will find some services that we can provide for you. In the case that you don't find what you are looking for, reach out! We are always interested in developing new solutions and exploring other technologies.</p>
                     </div>
                 </div>
 
